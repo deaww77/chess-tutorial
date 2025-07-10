@@ -2,68 +2,110 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHESSTHAILAND</title>
-    <link rel="stylesheet" href=".//css/styl.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHESSTHAILAND</title>
+  <link rel="stylesheet" href="./css/styl.css" />
 </head>
 
 <body>
-    <div class="header">
-        <h2>สอนเล่นหมากรุกสากล</h2>
-    </div>
-    <!--ปุ่มกดแถบบน-->
-    <div class="topnav">
-        <a href="./topnav/history.html" target="_blank">ประวัติหมากรุกสากล</a>
-        <a href=".//topnav/open.html" target="_blank">การเปิดหมาก</a>
-        <a href="./topnav/score.html" target="_blank">ลำดับความสำคัญ</a>
-        <a href="./topnav/checkmate.html" target="_blank">รุกฆาต</a>
-        <a href="./topnav/tricks.html" target="_blank">ทริค</a>
-    </div>
-    <!--เนื้อหาสอน-->
-    <div class="section">
-        <div class="box1">
-            <img src="./img/pow.png" alt="pawn" width="250" height="260">
-            <p class="kk">เบี้ย หรือ pawn</p>
-            <p id="demo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus illo ullam, quasi velit sed non molestiae maxime aliquid temporibus aliquam cum. Ipsam dignissimos veritatis blanditiis tempora alias culpa, optio labore nemo sint accusantium
-                assumenda reiciendis beatae ipsum facere necessitatibus! Odio dolore accusantium doloribus, adipisci eaque impedit assumenda fugiat exercitationem. Fugit!</p>
-        </div>
-        <div class="box2">
-            <img src="./img/knigth.png" alt="knight" width="250" height="260">
-            <p class="kk">ม้า หรือ knight</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus illo ullam, quasi velit sed non molestiae maxime aliquid temporibus aliquam cum. Ipsam dignissimos veritatis blanditiis tempora alias culpa, optio labore nemo sint accusantium
-                assumenda reiciendis beatae ipsum facere necessitatibus! Odio dolore accusantium doloribus, adipisci eaque impedit assumenda fugiat exercitationem. Fugit!</p>
-        </div>
-        <div class="box3">
-            <img src="./img/bishop.png" alt="bishop" width="350" height="260">
-            <p class="kk"> bishop</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus illo ullam, quasi velit sed non molestiae maxime aliquid temporibus aliquam cum. Ipsam dignissimos veritatis blanditiis tempora alias culpa, optio labore nemo sint accusantium
-                assumenda reiciendis beatae ipsum facere necessitatibus! Odio dolore accusantium doloribus, adipisci eaque impedit assumenda fugiat exercitationem. Fugit!</p>
-        </div>
-    </div>
-    <div class="section2">
-        <div class="box4">
-            <img src="./img/ruk.png" alt="rook" width="350" height="260">
-            <p class="kk">เรือ หรือ rook</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus illo ullam, quasi velit sed non molestiae maxime aliquid temporibus aliquam cum. Ipsam dignissimos veritatis blanditiis tempora alias culpa, optio labore nemo sint accusantium
-                assumenda reiciendis beatae ipsum facere necessitatibus! Odio dolore accusantium doloribus, adipisci eaque impedit assumenda fugiat exercitationem. Fugit!</p>
-        </div>
-        <div class="box5">
-            <img src="./img/queen.png" alt="rook" width="350" height="260">
-            <p class="kk">ควีน queen</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus illo ullam, quasi velit sed non molestiae maxime aliquid temporibus aliquam cum. Ipsam dignissimos veritatis blanditiis tempora alias culpa, optio labore nemo sint accusantium
-                assumenda reiciendis beatae ipsum facere necessitatibus! Odio dolore accusantium doloribus, adipisci eaque impedit assumenda fugiat exercitationem. Fugit!</p>
-        </div>
-        <div class="box6">
-            <img src="./img/king.png" alt="rook" width="350" height="260">
-            <p class="kk">คิง king</p>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus illo ullam, quasi velit sed non molestiae maxime aliquid temporibus aliquam cum. Ipsam dignissimos veritatis blanditiis tempora alias culpa, optio labore nemo sint accusantium
-                assumenda reiciendis beatae ipsum facere necessitatibus! Odio dolore accusantium doloribus, adipisci eaque impedit assumenda fugiat exercitationem. Fugit!</p>
-        </div>
-    </div>
-    <script src="script.js"></script>
+  <div class="header">
+    <h2>สอนเล่นหมากรุกสากล</h2>
+  </div>
 
+  <!-- ปุ่มกดแถบบน -->
+  <div class="topnav">
+    <a href="./topnav/history.html" target="_blank">ประวัติหมากรุกสากล</a>
+    <a href="./topnav/open.html" target="_blank">การเปิดหมาก</a>
+    <a href="./topnav/score.html" target="_blank">ลำดับความสำคัญ</a>
+    <a href="./topnav/checkmate.html" target="_blank">รุกฆาต</a>
+    <a href="./topnav/tricks.html" target="_blank">ทริค</a>
+  </div>
+
+  <!-- เนื้อหาสอน -->
+  <div class="section">
+    <!-- Pawn -->
+    <div class="box1">
+      <img src="./img/pow.png" alt="pawn" width="250" height="260" />
+      <p class="kk">เบี้ย หรือ Pawn</p>
+      <p>
+        <strong>เบี้ย (Pawn)</strong> เป็นหมากตัวเล็กที่สุด แต่มีจำนวนมากที่สุดในกระดาน โดยแต่ละฝ่ายจะมี 8 ตัว
+      </p>
+      <ul>
+        <li><strong>การเดิน:</strong> เดินตรงหน้า 1 ช่อง ถ้ายังไม่เคยเดินสามารถเดิน 2 ช่องได้</li>
+        <li><strong>การกิน:</strong> กินเฉียงหน้าซ้ายหรือขวา 1 ช่อง</li>
+        <li><strong>การโปรโมท:</strong> หากถึงฝั่งตรงข้ามสามารถเปลี่ยนเป็นหมากตัวอื่นได้ เช่น ควีน รุก บิชอป หรือม้า</li>
+        <li><strong>ท่าพิเศษ En Passant:</strong> การกินพิเศษเมื่อเบี้ยฝ่ายตรงข้ามเดิน 2 ช่องผ่านหน้าคุณ</li>
+      </ul>
+      <p>เบี้ยอาจดูอ่อนแอ แต่สามารถพลิกเกมได้!</p>
+    </div>
+
+    <!-- Knight -->
+    <div class="box2">
+      <img src="./img/knigth.png" alt="knight" width="250" height="260" />
+      <p class="kk">ม้า หรือ Knight</p>
+      <p><strong>ม้า (Knight)</strong> เป็นหมากที่สามารถกระโดดข้ามตัวอื่นได้</p>
+      <ul>
+        <li><strong>การเดิน:</strong> เดินเป็นรูปตัว L (2 ช่องแนวหนึ่ง + 1 ช่องแนวตั้งฉาก)</li>
+        <li><strong>การกิน:</strong> กินตัวที่อยู่ในตำแหน่งปลายทาง</li>
+      </ul>
+      <p>ม้าเหมาะกับการเปิดเกมและโจมตีแบบไม่คาดคิด</p>
+    </div>
+
+    <!-- Bishop -->
+    <div class="box3">
+      <img src="./img/bishop.png" alt="bishop" width="350" height="260" />
+      <p class="kk">บิชอป หรือ Bishop</p>
+      <p><strong>บิชอป (Bishop)</strong> เป็นหมากที่เดินเฉพาะแนวทแยง</p>
+      <ul>
+        <li><strong>การเดิน:</strong> เดินได้ไกลในแนวทแยง ตราบใดที่ไม่มีตัวขวาง</li>
+        <li><strong>การกิน:</strong> กินในเส้นทางทแยง</li>
+        <li>บิชอปแต่ละตัวจะอยู่บนสีเดียวไปตลอดเกม (ขาว/ดำ)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section2">
+    <!-- Rook -->
+    <div class="box4">
+      <img src="./img/ruk.png" alt="rook" width="350" height="260" />
+      <p class="kk">เรือ หรือ Rook</p>
+      <p><strong>เรือ (Rook)</strong> เป็นหมากที่มีพลังในการควบคุมแนวตั้งและแนวนอน</p>
+      <ul>
+        <li><strong>การเดิน:</strong> เดินได้ไกลในแนวตั้งหรือนอน</li>
+        <li><strong>การกิน:</strong> กินตัวที่อยู่ในทางเดิน</li>
+        <li><strong>ท่าพิเศษ:</strong> ทำ Castling ร่วมกับคิงได้</li>
+      </ul>
+    </div>
+
+    <!-- Queen -->
+    <div class="box5">
+      <img src="./img/queen.png" alt="queen" width="350" height="260" />
+      <p class="kk">ควีน หรือ Queen</p>
+      <p><strong>ควีน (Queen)</strong> เป็นหมากที่ทรงพลังที่สุดในกระดาน</p>
+      <ul>
+        <li><strong>การเดิน:</strong> เดินได้ทั้งแนวตั้ง แนวนอน และแนวทแยง</li>
+        <li><strong>การกิน:</strong> กินได้ทุกทิศทางในระยะทางที่เดินได้</li>
+        <li>เหมาะสำหรับรุกฆาตและควบคุมกระดาน</li>
+      </ul>
+    </div>
+
+    <!-- King -->
+    <div class="box6">
+      <img src="./img/king.png" alt="king" width="350" height="260" />
+      <p class="kk">คิง หรือ King</p>
+      <p><strong>คิง (King)</strong> เป็นหมากสำคัญที่สุด หากถูกรุกฆาตจะจบเกมทันที</p>
+      <ul>
+        <li><strong>การเดิน:</strong> เดินรอบตัวได้ทีละ 1 ช่อง</li>
+        <li><strong>การกิน:</strong> กินตัวที่อยู่รอบตัว</li>
+        <li><strong>ท่าพิเศษ:</strong> สามารถ Castling กับเรือเพื่อป้องกันตัว</li>
+        <li>🛑 หากถูก Checkmate ถือว่าแพ้ทันที</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>

@@ -67,3 +67,107 @@ h2 {
 .box3 img {
     margin-left: 70px;
 }
+
+/* styl.css */
+
+/* ส่วนหัว */
+.header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* เมนูด้านบน */
+.topnav {
+  background-color: #444;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.topnav a {
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.topnav a:hover {
+  background-color: #b4ff9d;
+}
+
+/* กล่องเนื้อหาหมากแต่ละตัว */
+.section, .section2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* กล่องหมากแต่ละตัว */
+.box1, .box2, .box3, .box4, .box5, .box6 {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* หัวเรื่องแต่ละกล่อง */
+.kk {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* การตกแต่งข้อความในกล่อง */
+.box1 p,
+.box2 p,
+.box3 p,
+.box4 p,
+.box5 p,
+.box6 p,
+.box1 ul,
+.box2 ul,
+.box3 ul,
+.box4 ul,
+.box5 ul,
+.box6 ul {
+  line-height: 1.8;
+  text-align: justify;
+  margin: 10px 0;
+}
+
+/* ทำให้ภาพไม่เกินขนาดกล่อง */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Responsive สำหรับจอมือถือ */
+@media screen and (max-width: 768px) {
+  .section, .section2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box1, .box2, .box3, .box4, .box5, .box6 {
+    width: 90%;
+  }
+
+  .topnav {
+    flex-direction: column;
+  }
+
+  .topnav a {
+    text-align: center;
+    border-top: 1px solid #555;
+  }
+}
