@@ -6,46 +6,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CHESSTHAILAND</title>
-    <link rel="stylesheet" href="..//css/styl.css">
+    <link rel="stylesheet" href="../css/styl.css">
 </head>
 
 <body>
     <div class="header">
         <h2>สอนเล่นหมากรุกสากล</h2>
     </div>
+
     <!--ปุ่มกดแถบบน-->
     <div class="topnav">
-        <a href="..//index.html">สอน</a>
+        <a href="../index.html">สอน</a>
         <a href="history.html" target="_blank">ประวัติหมากรุกสากล</a>
         <a href="open.html" target="_blank">การเปิดหมาก</a>
         <a href="checkmate.html" target="_blank">รุกฆาต</a>
         <a href="tricks.html" target="_blank">ทริค</a>
     </div>
-    <p>ลำดับความสำคัญในหมากรุกสากล</p>
-    <div class="gg">
-        <p>ในการที่เราจะแลกตัวหมากของเรากับฝั่งตรงข้าม เราควรรู้ว่าตัวไหนควรแลกไม่ควรแลก</p>
-        <p>ค่าของตัวหมากแต่ล่ะตัว</p>
-        <div class="box66">
-            <img src="./img/pow.png" alt="pawn" width="250" height="260">
-            <p class="kk">เบี้ย หรือ pawn</p>
-        </div>
-        <div class="box67">
-            <img src="./img/knigth.png" alt="knight" width="250" height="260">
-            <p class="kk">ม้า หรือ knight</p>
-        </div>
-        <div class="box68">
-            <img src="./img/bishop.png" alt="bishop" width="350" height="260">
-            <p class="kk"> bishop</p>
-        </div>
-        <div class="box69">
-            <img src="./img/ruk.png" alt="rook" width="350" height="260">
-            <p class="kk">เรือ หรือ rook</p>
-        </div>
-        <div class="box70">
-            <p class="kk">ควีน queen</p>
-        </div>
-        <div class="box71">
-            <p class="kk">คิง king</p>
+
+    <div class="content" style="padding: 20px; line-height: 1.8;">
+        <h3>ลำดับความสำคัญของตัวหมากในหมากรุกสากล</h3>
+        <p>เมื่อเล่นหมากรุก การแลกหมากกับฝ่ายตรงข้ามถือเป็นสิ่งสำคัญมาก ดังนั้นเราควรเข้าใจ "ค่าของหมากแต่ละตัว" เพื่อประเมินความคุ้มค่าในการแลกเปลี่ยน</p>
+
+        <h4>ค่าประมาณของหมาก (มูลค่าตามแต้ม)</h4>
+        <ul>
+            <li><strong>♟ เบี้ย (Pawn)</strong> = <strong>1 แต้ม</strong><br>เป็นหมากเล็กแต่สำคัญ สามารถเลื่อนเป็นควีนได้ถ้าถึงปลายกระดาน</li>
+
+            <li><strong>♞ ม้า (Knight)</strong> = <strong>3 แต้ม</strong><br>เดินรูปตัว L เป็นตัวหมากที่เหมาะสำหรับการโจมตีที่ไม่คาดคิด</li>
+
+            <li><strong>♝ บิชอป (Bishop)</strong> = <strong>3 แต้ม</strong><br>เดินทะแยงไกล คุมกระดานได้กว้างถ้าไม่มีหมากขวาง</li>
+
+            <li><strong>♜ เรือ (Rook)</strong> = <strong>5 แต้ม</strong><br>เดินแนวตั้ง-แนวนอน มีพลังมากในช่วงกลางเกมถึงท้ายเกม</li>
+
+            <li><strong>♛ ควีน (Queen)</strong> = <strong>9 แต้ม</strong><br>หมากที่ทรงพลังที่สุด เดินได้ทั้งแนวตรงและแนวเฉียง</li>
+
+            <li><strong>♚ คิง (King)</strong> = <strong>ไม่มีแต้ม</strong><br>เป็นหมากที่สำคัญที่สุด ถ้าถูกรุกฆาต เกมจบทันที!</li>
+        </ul>
+
+        <h4>ตัวอย่างการแลกหมากอย่างชาญฉลาด</h4>
+        <ul>
+            <li>อย่าแลกควีนกับเรือ — ไม่คุ้มเพราะ 9 > 5</li>
+            <li>มักแลกบิชอปกับม้า — เพราะมีค่าเท่ากัน 3 แต้ม</li>
+            <li>หากคุณได้กินควีนโดยเสียแค่เรือและเบี้ย ถือว่าได้เปรียบ</li>
+        </ul>
+
+        <h4>ภาพประกอบหมาก</h4>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+            <div class="box66">
+                <img src="./img/pow.png" alt="pawn" width="150" height="150">
+                <p class="kk">♟ เบี้ย (Pawn) = 1</p>
+            </div>
+            <div class="box67">
+                <img src="./img/knigth.png" alt="knight" width="150" height="150">
+                <p class="kk">♞ ม้า (Knight) = 3</p>
+            </div>
+            <div class="box68">
+                <img src="./img/bishop.png" alt="bishop" width="150" height="150">
+                <p class="kk">♝ บิชอป (Bishop) = 3</p>
+            </div>
+            <div class="box69">
+                <img src="./img/ruk.png" alt="rook" width="150" height="150">
+                <p class="kk">♜ เรือ (Rook) = 5</p>
+            </div>
+            <div class="box70">
+                <img src="./img/queen.png" alt="queen" width="150" height="150">
+                <p class="kk">♛ ควีน (Queen) = 9</p>
+            </div>
+            <div class="box71">
+                <img src="./img/king.png" alt="king" width="150" height="150">
+                <p class="kk">♚ คิง (King) = ไม่มีแต้ม (สำคัญที่สุด!)</p>
+            </div>
         </div>
     </div>
 </body>
